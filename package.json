@@ -1,6 +1,6 @@
 {
   "name": "crashyboi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "crashes ur node app",
   "main": "index.js",
   "scripts": {

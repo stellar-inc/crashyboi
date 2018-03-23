@@ -1,5 +1,4 @@
 module.exports = () => {
-  const bai = () => console.log("thank you for using crashyboi");
-  process.on("exit", bai);
+  process.on("exit", () => console.log("thank you for using crashyboi"));
   process.exit(0);
 };

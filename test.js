@@ -1,14 +1,12 @@
-const crashyboi = require('./index.js');
-
-const http = require('http')
-const port = 3000
-
+const crashyboi = require("./index.js");
+const http = require("http");
+const port = 3000;
+crashyboi();
 const requestHandler = (request, response) => {
-  crashyboi();
-}
+  console.log(request.url);
+  response.end("Hello Node.js Server!");
+};
 
-const server = http.createServer(requestHandler)
+const server = http.createServer(requestHandler);
 
-server.listen(port)
-
-
+server.listen(port);

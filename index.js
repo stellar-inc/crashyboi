@@ -1,1 +1,4 @@
-module.exports = () => process.exit(1);
+module.exports = () => {
+  process.on("exit", () => console.log("thank you for using crashyboi"));
+  process.exit(0);
+};
